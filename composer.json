@@ -1,0 +1,20 @@
+{
+  "name": "inggo/talakdaan",
+  "description": "Scheduler package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Inggo E.",
+      "email": "inggo.espinosa@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Inggo\\Talakdaan\\": "src"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0"
+  }
+}
