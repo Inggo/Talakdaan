@@ -3,6 +3,7 @@
 namespace Inggo\Talakdaan;
 
 use Illuminate\Support\ServiceProvider;
+use Inggo\Talakdaan\Console\InstallTalakdaanPackage;
 
 class TalakdaanServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,10 @@ class TalakdaanServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
+            $this->commands([
+                InstallTalakdaanPackage::class,
+            ]);
+
             $this->publishes([
                 __DIR__ . '/../config/config.php' => config_path('talakdaan.php'),
             ], 'config');

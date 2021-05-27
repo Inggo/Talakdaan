@@ -4,8 +4,8 @@ namespace Inggo\Talakdaan\Tests\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use Inggo\Talakdaan\Tests\TestCase;
 use Inggo\Talakdaan\Models\Event;
+use Inggo\Talakdaan\Tests\TestCase;
 
 class EventTest extends TestCase
 {
