@@ -11,7 +11,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "Inggo\\Talakdaan\\": "src"
+      "Inggo\\Talakdaan\\": "src",
+      "Inggo\\Talakdaan\\Database\\Factories\\": "database/factories"
     }
   },
   "autoload-dev": {
@@ -21,7 +22,8 @@
   },
   "require-dev": {
     "orchestra/testbench": "^6.0",
-    "phpunit/phpunit": "^9.5"
+    "phpunit/phpunit": "^9.5",
+    "orchestra/canvas": "^6.1"
   },
   "extra": {
     "laravel": {
@@ -29,5 +31,9 @@
         "Inggo\\Talakdaan\\TalakdaanServiceProvider"
       ]
     }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "testf": "vendor/bin/phpunit --filter"
   }
 }

@@ -1,0 +1,29 @@
+preset: package
+
+namespace: Inggo\Talakdaan
+user-auth-provider: Inggo\Talakdaan\User
+
+paths:
+  src: src
+  resource: resources
+
+factory:
+  path: database/factories
+  namespace: Inggo\Talakdaan\Database\Factories
+
+migration:
+  path: database/migrations
+  prefix: ''
+
+console:
+  namespace: Inggo\Talakdaan\Console
+
+model:
+  path: src/models
+  namespace: Inggo\Talakdaan
+
+provider:
+  namespace: Inggo\Talakdaan\Providers
+
+testing:
+  namespace: Inggo\Talakdaan\Tests
